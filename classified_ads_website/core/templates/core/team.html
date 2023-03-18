@@ -1,0 +1,83 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Our Team{% endblock title %}
+
+{% block content %}
+
+<header class="bg-gray-900 text-white px-4 py-6">
+    <h1 class="text-3xl font-bold text-center">Our Team</h1>
+  </header>
+  <main class="max-w-6xl mx-auto py-10 px-4">
+    <div class="flex flex-wrap -mx-4">
+      <!-- Team member 1 -->
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Team member 1" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">Satish Doke</h2>
+            <p class="text-gray-700 text-base">Incharge</p>
+            <p class="text-gray-600 text-sm mt-4">Department of B.Voc Software Developement YCIS Satara</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team member 2 -->
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Team member 2" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">Monica Parekh</h2>
+            <p class="text-gray-700 text-base">Guide</p>
+            <p class="text-gray-600 text-sm mt-4">Our project guide</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team member 3 -->
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/600x400" alt="Team member 3" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold mb-2">Sairaj Jadhav</h2>
+              <p class="text-gray-700 text-base">Student</p>
+              <p class="text-gray-600 text-sm mt-4">B.Voc Software Developement Third Year</p>
+            </div>
+          </div>
+        </div>
+        <!-- Team member 4 -->
+        <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div class="bg-gray-100 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/600x400" alt="Team member 4" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold mb-2">Ritwiz Mulay</h2>
+              <p class="text-gray-700 text-base">Student</p>
+              <p class="text-gray-600 text-sm mt-4">B.Voc Software Developement Third Year</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Import JavaScript for carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glide.js/3.4.1/glide.min.js" integrity="sha512-W6UJd6rz+8O92w1kzggr6KbdJotYve+HJrM6ZjbFJizAepT2k0QvNl+JdK44q3s/0Y9e+O/EnNGVzZq3qEhW8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        autoplay: true,
+        hoverpause: true,
+        breakpoints: {
+          640: {
+            perView: 1
+          },
+          768: {
+            perView: 2
+          },
+          1024: {
+            perView: 3
+          }
+        }
+      }).mount();
+    </script>
+  
+
+
+{% endblock %}
